@@ -1,0 +1,20 @@
+GET http://localhost:8000/api/licences
+
+GET http://localhost:8000/api/licence/{id}
+
+POST http://localhost:8000/api/licence/add
+
+{
+      "type_licence": "A",
+      "libelle_licence": "Licence A",
+      "description": "Licence A pour cadence rapide et lente"
+}
+
+PATCH http://localhost:8000/api/licence/{id}/update
+{
+      "type_licence": "A updated by API",
+      "libelle_licence": "Licence A updated by API",
+      "description": "Licence A updated by API pour cadence rapide et lente"
+}
+
+DELETE http://localhost:8000/api/licence/{id}/delete
